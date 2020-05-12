@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+ {% load static %}
+
+{% block content %}
+        <!-- start banner Area -->
+            {% include "core/banner.html" %}
+        <!-- End banner Area -->
+
+        <!-- Start home-about Area -->
+            {% include "core/about.html" %}
+        <!-- End home-about Area -->			
+
+        <!-- Start menu-area Area -->
+            {% include "core/menu.html" %}
+        <!-- End menu-area Area -->			
+
+        <!-- Start reservation Area -->
+            {% include "core/reservation.html" %}
+        <!-- End reservation Area -->
+        
+        <!-- Start gallery-area Area -->
+            {% include "core/gallery.html" %}
+        <!-- End gallery-area Area -->			
+
+        <!-- Start review Area -->
+            {% include "core/review.html" %}
+        <!-- End review Area -->					
+
+        <!-- Start blog Area -->
+            {% include "core/blog.html" %}
+        <!-- End blog Area -->							
+{% endblock %}

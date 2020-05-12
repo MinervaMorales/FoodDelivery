@@ -1,0 +1,37 @@
+{% load static %}
+<header id="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                    <div id="logo">
+                    <a href="/"><img src="{% static 'MainApp/img/logo.png' %}" alt="" title="" /></a>
+                    </div>
+            </div>			  					
+        </div>
+    </div>
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-center d-flex">			
+            <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a  href="{% url 'menu' %}">Menu</a></li>
+                <li><a   href="{% url 'gallery' %}">Gallery</a></li>
+                <li class="menu-has-children"><a  href="{% url 'blog' %}">Blog</a>
+                <ul>
+                    <li><a href="{% static 'MainApp/blog-home.html' %}">Blog Home</a></li>
+                    <li><a href="{% static 'MainApp/blog-single.html' %}">Blog Single</a></li>
+                </ul>
+                </li>	
+                <li class="menu-has-children"><a href="">Ingresar</a>
+                <ul>
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li class="menu-has-children"><a href="{% url 'register' %}">Registro</a></li>					                		
+                </ul>
+                </li>					          					          		          
+                <li><a href="{% static 'MainApp/contact.html' %}">Contact</a></li>
+            </ul>
+            </nav><!-- #nav-menu-container -->					      		  
+        </div>
+    </div>
+</header>
