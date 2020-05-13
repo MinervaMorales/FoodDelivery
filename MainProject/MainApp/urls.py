@@ -7,9 +7,9 @@ urlpatterns = [
     path('login/', views.register, name="login"),
     path('register/', views.register, name="register"),
     ##path('about/', views.about, name="about"),
-    path('menu/', views.menu, name="menu"),
+    ##path('menu/', views.menu, name="menu"),
     path('reservation/', views.reservation, name="reservation"),
-    path('gallery/', views.gallery, name="gallery"),
+ #   path('gallery/', views.gallery, name="gallery"),
     path('review/', views.review, name="review"),
-    path('blog/', views.blog, name="blog")
+    #path('blog/', views.blog, name="blog")
 ]
